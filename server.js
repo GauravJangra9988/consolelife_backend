@@ -1,8 +1,8 @@
-const express = require('express');
+import express from 'express'
 const app = express();
-const cors = require('cors');
-const connectDB = require('./db');
-const Story = require('./models/story');
+import cors from 'cors'
+import connectDB from './db.js';
+import Story from './models/story.js'
 
 app.use(cors());
 app.use(express.json());

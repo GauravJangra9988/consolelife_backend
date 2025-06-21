@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const storySchema = new mongoose.Schema({
     title:{
@@ -16,5 +16,4 @@ const storySchema = new mongoose.Schema({
 });
 
 const Story = mongoose.model('Story',storySchema);
-
-module.exports = Story;
+export default Story;
