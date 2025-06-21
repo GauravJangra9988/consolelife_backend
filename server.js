@@ -28,8 +28,9 @@ app.get('/api/getstories', async (req,res)=>{
     res.status(200).json(stories);
 })
 
+PORT=process.env.PORT || 3000;
 
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log('server started');
 })
 
